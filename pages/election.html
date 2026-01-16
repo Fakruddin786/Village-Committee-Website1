@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Village Committee - Elections</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/election.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg'><text y='32' font-size='32'>🏘️</text></svg>">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">🏘️ Village Committee</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="election.html" class="active">Elections</a></li>
+                <li><a href="members.html">Members</a></li>
+                <li><a href="guides.html">Guides</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1>Village Committee Elections 2026</h1>
+            <p>Participate in democratic selection of committee leadership</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Election Voting Section -->
+            <section class="election-voting">
+                <h2>Cast Your Vote</h2>
+                
+                <!-- President Election -->
+                <div class="position-section">
+                    <h3>🎯 President</h3>
+                    <p class="position-description">Vote for the leader who will guide our village</p>
+                    <div class="candidates-grid">
+                        <div class="candidate-card">
+                            <h4>Raj Kumar Singh</h4>
+                            <p>Experience: 20 years in community service</p>
+                            <button onclick="castVote('President', 'Raj Kumar Singh')">Vote</button>
+                        </div>
+                        <div class="candidate-card">
+                            <h4>Arun Verma</h4>
+                            <p>Experience: 15 years in village development</p>
+                            <button onclick="castVote('President', 'Arun Verma')">Vote</button>
+                        </div>
+                        <div class="candidate-card">
+                            <h4>Mohan Lal</h4>
+                            <p>Experience: 10 years in agricultural programs</p>
+                            <button onclick="castVote('President', 'Mohan Lal')">Vote</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vice President Election -->
+                <div class="position-section">
+                    <h3>👥 Vice President</h3>
+                    <p class="position-description">Support the president in committee activities</p>
+                    <div class="candidates-grid">
+                        <div class="candidate-card">
+                            <h4>Priya Sharma</h4>
+                            <p>Background: Social worker & educator</p>
+                            <button onclick="castVote('Vice President', 'Priya Sharma')">Vote</button>
+                        </div>
+                        <div class="candidate-card">
+                            <h4>Rekha Singh</h4>
+                            <p>Background: Health activist</p>
+                            <button onclick="castVote('Vice President', 'Rekha Singh')">Vote</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Secretary Election -->
+                <div class="position-section">
+                    <h3>📋 Secretary</h3>
+                    <p class="position-description">Manage records and communications</p>
+                    <div class="candidates-grid">
+                        <div class="candidate-card">
+                            <h4>Amit Patel</h4>
+                            <p>Skills: Administrative, documentation</p>
+                            <button onclick="castVote('Secretary', 'Amit Patel')">Vote</button>
+                        </div>
+                        <div class="candidate-card">
+                            <h4>Rajesh Kumar</h4>
+                            <p>Skills: IT literate, organizing</p>
+                            <button onclick="castVote('Secretary', 'Rajesh Kumar')">Vote</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Election Results -->
+            <section class="election-results">
+                <div id="electionResults"></div>
+            </section>
+
+            <!-- Election Information -->
+            <section class="election-info">
+                <h2>Election Information</h2>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <h4>📅 Schedule</h4>
+                        <p>Elections are held every 3 years. Current election period: Jan 2026 - Mar 2026</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>✅ Eligibility</h4>
+                        <p>All registered village residents above 18 years can vote and stand as candidates</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>🔐 Privacy</h4>
+                        <p>All votes are confidential and stored securely in your browser</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>📊 Transparency</h4>
+                        <p>Results are displayed in real-time for complete transparency</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Village Committee. All rights reserved. | Democratic Governance</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
